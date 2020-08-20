@@ -69,6 +69,7 @@ public class C206_CaseStudyTest {
 	}
 	
 	@Test
+	//Ariel - Junit test
 	public void deleteCustomer() {
 		//fail("Not yet implemented");
 		// Test if Item list is not null but empty - boundary
