@@ -19,7 +19,7 @@ public class Customer {
 	
 	public Customer(String name, String role, String email, String password, String status) {
 		this.name = name;
-		this.role = name;
+		this.role = role;
 		this.email = email;
 		this.password = password;
 		this.status = status; 
