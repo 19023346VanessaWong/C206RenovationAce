@@ -42,6 +42,12 @@ public class C206_CaseStudy {
 					C206_CaseStudy.deleteCustomer(customerList);
 				}
 			}
+			else if(option==9) {
+				System.out.println("Thank You. Bye!");
+			}
+			else {
+				System.out.println("Invalid Option");
+			}
 			
 		}
 	
