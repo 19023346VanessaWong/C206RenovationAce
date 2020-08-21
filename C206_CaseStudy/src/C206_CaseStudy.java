@@ -129,7 +129,8 @@ public class C206_CaseStudy {
 		String cname = Helper.readString("Enter the name of the customer: ");
 		
 		for(int i=0;i<customerList.size();i++) {
-			if(customerList.get(i).getName().contains(cname)) {
+			if(customerList.get(i).getName().contains(cname)){
+				
 				customerList.remove(i);
 				
 				System.out.println("Customer deleted!");

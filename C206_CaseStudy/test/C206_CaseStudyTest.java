@@ -29,6 +29,7 @@ public class C206_CaseStudyTest {
 	public void addCustomerTest() {
 		//Check that there is available Customer List, so that new customer account can be added - boundary
 		assertNotNull("Check if there is Customer List to add to ", customerList);
+		
 		//Given an empty list, after adding 1 item, the size of the list is 1 - normal
 		//The item just added is as same as the first item of the list
 		C206_CaseStudy.addCustomer(customerList, c1);
@@ -74,7 +75,15 @@ public class C206_CaseStudyTest {
 		//fail("Not yet implemented");
 		// Test if Item list is not null but empty - boundary
 		assertNotNull("Test if there is valid Customer arraylist to delete customer account from", customerList);
+		C206_CaseStudy.addCustomer(customerList, c1);
 		
+		//normal
+		//Test if the name added inside the customer list is the same as first customer
+		assertEquals(customerList.get(0).getName(), c1.getName());
+		
+		//error
+		//Test when the name added inside the customer list is not the same
+		assertNotEquals(customerList.get(0).getName(), c2.getName());
 	}
 
 	@After
